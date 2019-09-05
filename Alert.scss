@@ -1,0 +1,55 @@
+@keyframes slidein {
+	from {
+		height: 100%;
+	}
+
+	to {
+		height: 0%;
+	}
+}
+
+.alert {
+	$parent: &;
+
+	position: relative;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: var(--radius);
+
+	margin: 10px 0;
+
+	&--error {
+		background-color: #fff1f0;
+		border-color: #ffa39e;
+		color: #000;
+	}
+
+	&__main {
+		display: flex;
+		position: relative;
+	}
+
+	&__icon {
+		line-height: 1;
+		flex: 0 0 30px;
+		padding-right: 10px;
+	}
+
+	&__countdown {
+		background-color: rgba(0, 0, 0, 0.2);
+		position: absolute;
+		bottom: 0;
+		width: 35px;
+		height: 0;
+		left: 0;
+
+		animation: slidein 10000ms linear;
+	}
+
+	&__content {
+		flex-grow: 1;
+		> *:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
