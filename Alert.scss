@@ -12,16 +12,48 @@
 	$parent: &;
 
 	position: relative;
-	padding: 10px;
-	border: 1px solid #ccc;
-	border-radius: var(--radius);
+	padding: var(--space-md);
+	border-radius: var(--radius-sm);
+	// clear:both;
 
-	margin: 10px 0;
+	margin: var(--space-md) 0;
+
+	//background: #fff;
+	//color: #000;
+	border-left: 5px solid #000;
+	box-shadow: var(--shadow-md);
 
 	&--error {
-		background-color: #fff1f0;
-		border-color: #ffa39e;
-		color: #000;
+		border-color: var(--color-error);
+		#{$parent}__icon {
+			color: var(--color-error);
+		}
+	}
+
+	&--info {
+		border-color: var(--color-info);
+		#{$parent}__icon {
+			color: var(--color-info);
+		}
+	}
+
+	&--success {
+		border-color: var(--color-success);
+		#{$parent}__icon {
+			color: var(--color-success);
+		}
+	}
+
+	&--warning {
+		border-color: var(--color-warning);
+
+		#{$parent}__icon {
+			color: var(--color-warning);
+		}
+	}
+
+	&--hidden {
+		display: none;
 	}
 
 	&__main {
@@ -31,8 +63,8 @@
 
 	&__icon {
 		line-height: 1;
-		flex: 0 0 30px;
-		padding-right: 10px;
+		flex: 0 0 40px;
+		margin-right: var(--space-md);
 	}
 
 	&__countdown {
@@ -48,6 +80,7 @@
 
 	&__content {
 		flex-grow: 1;
+		align-self: center;
 		> *:last-child {
 			margin-bottom: 0;
 		}

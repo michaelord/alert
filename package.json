@@ -1,19 +1,21 @@
 {
-  "name": "alert",
-  "private": true,
-  "description": "...",
-  "version": "0.1.0",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "http://github.com/michaelord/alert.git"
-  },
-  "devDependencies": {},
-  "author": "michaelord",
-  "keywords": [],
-  "dependencies": {
-    "components/libs": "http://github.com/michaelord/libs.git",
-    "components/icon": "http://github.com/michaelord/icon.git",
-    "components/types": "http://github.com/michaelord/types.git"
-  }
+	"name": "alert",
+	"private": true,
+	"description": "...",
+	"version": "0.1.0",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "http://github.com/michaelord/alert.git"
+	},
+	"devDependencies": {},
+	"author": "michaelord",
+	"keywords": [],
+	"dependencies": {
+		"components/icon": "http://github.com/michaelord/icon.git",
+		"components/libs": "http://github.com/michaelord/libs.git",
+		"components/types": "http://github.com/michaelord/types.git",
+		"components/ui": "http://github.com/michaelord/ui.git",
+		"components/alert": "http://github.com/michaelord/alert.git"
+	}
 }
